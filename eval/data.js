@@ -5,7 +5,7 @@ const books = [
   },
   {
     "title": "1984",
-    "author": "conflit A"
+    "author": "conflit B "
   },
   {
     "title": "Les Misérables",
