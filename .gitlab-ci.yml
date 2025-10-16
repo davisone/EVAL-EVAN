@@ -1,0 +1,13 @@
+stages:
+  - build
+  - test
+
+build-job:
+  stage: build
+  script:
+    - echo "Utilisateur GitLab : $GITLAB_USER_LOGIN"
+
+test-job:
+  stage: test
+  script:
+    - echo "Branche du pipeline : $CI_COMMIT_BRANCH"
