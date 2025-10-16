@@ -6,18 +6,15 @@ stages:
 build-job:
   stage: build
   script:
-    - echo "Utilisateur GitLab : $GITLAB_USER_LOGIN"
-    - echo "✅ Étape de build terminée"
+    - 'echo "Utilisateur GitLab : ${GITLAB_USER_LOGIN}"'
 
 test-job:
   stage: test
   script:
-    - echo "Branche du pipeline : $CI_COMMIT_BRANCH"
-    - echo "✅ Tests exécutés avec succès"
+    - 'echo "Branche du pipeline : ${CI_COMMIT_BRANCH}"'
 
 deploy-job:
   stage: deploy
   script:
-    - echo "🚀 Déploiement fictif depuis la branche $CI_COMMIT_BRANCH"
-    - echo "Déploiement terminé ✅"
+    - 'echo "Deploiement fictif depuis ${CI_COMMIT_BRANCH}"'
   when: manual
