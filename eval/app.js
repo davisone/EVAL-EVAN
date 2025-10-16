@@ -6,7 +6,7 @@ function renderBooks() {
     const tr = document.createElement('tr');
 
     const titleTd = document.createElement('td');
-    titleTd.textContent = book.title;
+    titleTd.textContent = `${index + 1}. ${book.title}`;
     tr.appendChild(titleTd);
 
     const authorTd = document.createElement('td');
